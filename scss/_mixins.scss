@@ -1,37 +1,48 @@
-@mixin heading($max-width) {
+@mixin heading($max-width: auto, $color: $darkBlue) {
   max-width: $max-width;
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
-  color: $darkBlue;
+  color: $color;
 
   & + p {
     font-weight: 300;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 150%;
     margin-top: 20px;
+    @if $color == $darkBlue {
+      color: #000;
+    } @else {
+      color: $color;
+    }
   }
 }
 
-@mixin button() {
+@mixin button(
+  $bg: $white,
+  $color: $darkBlue,
+  $font: #000,
+  $line: $white,
+  $distance: 5.5
+) {
   position: relative;
-  background: $white;
-  border: 4px solid $darkBlue;
+  background: $bg;
+  border: 4px solid $color;
   border-radius: 10px;
   font-weight: 600;
   font-size: 24px;
   line-height: 30px;
   text-decoration: none;
-  color: black;
+  color: $font;
   padding: 15px 35px;
   transition: all 0.3s ease-out;
 
   &:hover {
-    background-color: $darkBlue;
-    color: $white;
+    background-color: $color;
+    color: $bg;
 
     &::before {
-      transform: translateX(-100% * 5.5);
+      transform: translateX(-100% * $distance);
     }
   }
 
@@ -42,7 +53,7 @@
     right: 25px;
     height: 4px;
     width: 20px;
-    background-color: white;
+    background-color: $line;
     transform: translateX(0);
     transition: all 0.3s ease;
   }
