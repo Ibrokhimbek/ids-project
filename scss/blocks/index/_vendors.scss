@@ -1,0 +1,22 @@
+#vendors {
+  padding: 200px 0;
+}
+
+.vendors__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 85px;
+}
+
+.vendor__link {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    display: block;
+  }
+}

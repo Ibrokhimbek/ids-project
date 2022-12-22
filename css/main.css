@@ -425,4 +425,26 @@ body {
   background-color: #000;
   transform: translateX(0);
   transition: all 0.3s ease;
+}
+
+#vendors {
+  padding: 200px 0;
+}
+
+.vendors__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 85px;
+}
+
+.vendor__link {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vendor__link img {
+  display: block;
 }/*# sourceMappingURL=main.css.map */
