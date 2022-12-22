@@ -4,13 +4,97 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- Main css -->
+    <link rel="stylesheet" href="./css/main.css" />
     <title>IDS</title>
   </head>
   <body>
     <!-- Hero section -->
     <section id="hero__section">
-      <div class="container"></div>
+      <!-- Hero nav -->
+      <div class="container">
+        <div class="hero__nav">
+          <a class="hero__nav_logo" href="index.html">
+            <img src="./images/logo_ids.svg" alt="logo" />
+          </a>
+
+          <div class="telegram__wrapper">
+            <div>
+              <h2>Наш Телеграм</h2>
+              <span>+998 (97) 777-11-09</span>
+            </div>
+            <span>
+              <img src="./images/logo_telegram.svg" alt="telegram icon" />
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- End of Hero nav -->
+      <div class="container">
+        <!-- Slider -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div class="slide__info">
+                <h2>Серверы, компьютеры и моноблоки в Узбекистане</h2>
+                <p>20 лет опыта на рынке Узбекистана и Центальной Азии</p>
+                <a href="catalog.html" class="btn-primary">каталог</a>
+              </div>
+              <div class="slide-img">
+                <img src="./images/slider__img.png" alt="slide img" />
+              </div>
+            </div>
+            <!-- End of Slide -->
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div class="slide__info">
+                <h2>Серверы, компьютеры и моноблоки в Узбекистане</h2>
+                <p>20 лет опыта на рынке Узбекистана и Центальной Азии</p>
+                <a href="catalog.html" class="btn-primary">каталог</a>
+              </div>
+              <div class="slide-img">
+                <img src="./images/slider__img.png" alt="slide img" />
+              </div>
+            </div>
+            <!-- End of Slide -->
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div class="slide__info">
+                <h2>Серверы, компьютеры и моноблоки в Узбекистане</h2>
+                <p>20 лет опыта на рынке Узбекистана и Центальной Азии</p>
+                <a href="catalog.html" class="btn-primary">каталог</a>
+              </div>
+              <div class="slide-img">
+                <img src="./images/slider__img.png" alt="slide img" />
+              </div>
+            </div>
+            <!-- End of Slide -->
+          </div>
+        </div>
+        <!-- End of Slider -->
+      </div>
     </section>
     <!-- End of Hero section -->
+
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        spaceBetween: 150,
+        slidesPerView: 1,
+        centeredSlides: true,
+        autoplay: {
+          delay: 1500,
+        },
+      });
+    </script>
+    <!-- Main js -->
+    <script src="./js/main.js"></script>
   </body>
 </html>
