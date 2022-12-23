@@ -39,3 +39,71 @@
   @include button($darkBlue, $white, $white, $darkBlue, 10);
   margin-top: 80 !important;
 }
+
+.footer__navigation {
+  padding: 150px 0 80px;
+  background-color: #000;
+  color: $white;
+}
+
+.footer__navigation ul {
+  list-style: none;
+}
+
+.footerNavigation__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerNavigation__container ul:not(:last-child) {
+  max-width: 247px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footerNavigation__container ul:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footerNavigation__container ul:last-child li:first-child {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: right;
+  margin-bottom: 40px;
+}
+
+.footerNavigation__container ul:last-child li:nth-child(2) a {
+  color: $darkBlue;
+  text-decoration: none;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.footerNavigation__container ul:last-child li:last-child {
+  margin-top: auto;
+}
+
+.footerNavigation__container ul li a {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: $white;
+  text-decoration: none;
+
+  &:hover {
+    color: $darkBlue;
+    cursor: pointer;
+  }
+}
+
+.footerNavigation__container ul li:first-child {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+}
