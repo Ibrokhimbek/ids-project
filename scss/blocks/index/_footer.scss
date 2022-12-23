@@ -1,0 +1,41 @@
+#footer {
+  background-color: $darkBlue;
+}
+
+.footer__wrapper {
+  display: flex;
+}
+
+.cta {
+  width: 50%;
+  padding: 150px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cta__caption {
+  @include heading(auto, $white);
+}
+
+.cta__caption + p {
+  margin-bottom: 80px;
+}
+
+.map {
+  width: 50%;
+  position: relative;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 100%;
+  }
+}
+
+.cta__btn {
+  @include button($darkBlue, $white, $white, $darkBlue, 10);
+  margin-top: 80 !important;
+}
