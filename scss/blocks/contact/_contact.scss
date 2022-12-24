@@ -1,0 +1,99 @@
+#contact__hero {
+  background: linear-gradient(90deg, $white 34%, $darkBlue 34%);
+  padding: 100px 0 0;
+}
+
+.contact__wrapper {
+  padding: 110px 0 150px;
+  display: flex;
+}
+
+.address__title {
+  @include heading();
+}
+
+.contact__address {
+  width: 32%;
+}
+
+.contact__address ul {
+  list-style: none;
+}
+
+.contact__address ul li:first-child {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 150%;
+  font-style: normal;
+  margin-top: 60px;
+}
+
+.contact__address ul li:not(:first-child) {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  margin-top: 15px;
+  max-width: 310px;
+}
+
+.contact__form {
+  width: 68%;
+  padding-left: 80px;
+}
+
+.contact__form h2 {
+  @include heading(auto, $white);
+  margin-bottom: 60px;
+}
+
+.inputs__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+
+.inputs__wrapper input {
+  width: 49%;
+}
+
+.inputs__wrapper textarea {
+  width: 100%;
+}
+
+.inputs__wrapper input,
+textarea {
+  position: relative;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: $darkBlue;
+  border: 2px solid $white;
+  transition: all 0.2s ease;
+  color: $white;
+
+  &:focus {
+    outline: 2px solid $white;
+    caret-color: $white;
+  }
+}
+
+.contact__form input::placeholder,
+textarea::placeholder {
+  color: $white;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.form__submit {
+  @include button($darkBlue, $white, $white, $darkBlue, 9.5);
+  display: block;
+  margin-left: auto;
+}

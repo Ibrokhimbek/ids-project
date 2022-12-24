@@ -4,6 +4,7 @@
   font-size: 48px;
   line-height: 60px;
   color: $color;
+  font-style: normal;
 
   & + p {
     font-weight: 300;
@@ -40,6 +41,7 @@
   &:hover {
     background-color: $color;
     color: $bg;
+    cursor: pointer;
 
     &::before {
       transform: translateX(-100% * $distance);
