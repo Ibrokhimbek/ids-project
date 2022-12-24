@@ -879,6 +879,113 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: 100px;
 }
 
+.catalog__title {
+  max-width: 953px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #ffffff;
+  font-style: normal;
+  padding: 80px;
+  background: #293bdc;
+  margin-top: -160px;
+  margin-bottom: 150px;
+}
+.catalog__title + p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 150%;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.catalog__list {
+  display: flex;
+}
+
+.catalog__menu {
+  max-width: 305px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.catalog__menu-item {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  border: 1px solid #485156;
+}
+.catalog__menu-item:first-child {
+  border-radius: 10px 10px 0px 0px;
+}
+.catalog__menu-item:last-child {
+  border-radius: 0px 0px 10px 10px;
+}
+.catalog__menu-item a {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #485156;
+  text-decoration: none;
+  max-width: 204px;
+}
+.catalog__menu-item a:hover {
+  text-decoration: underline;
+}
+.catalog__menu-item::after {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/arrow-down.svg);
+  background-size: contain;
+  background-position: center;
+}
+
+.catalog__menu-item.active {
+  background-color: #293bdc;
+  color: white;
+  border-color: #293bdc;
+}
+.catalog__menu-item.active::after {
+  background-image: url(../images/arrow-down-white.svg);
+}
+.catalog__menu-item.active a {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+}
+.catalog__menu-item.active .catalog__products {
+  list-style: none;
+}
+.catalog__menu-item.active .catalog__products .catalog__products-item {
+  padding: 10px 0;
+}
+.catalog__menu-item.active .catalog__products .catalog__products-item a {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+}
+.catalog__menu-item.active .catalog__products .catalog__products-item a:hover {
+  text-decoration: underline;
+}
+
+.catalog__list .similar__products {
+  padding-left: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
 #about__hero {
   height: 100vh;
   background-image: url(../images/bg__about.jpeg);
