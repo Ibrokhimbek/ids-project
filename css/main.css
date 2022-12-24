@@ -719,6 +719,12 @@ textarea::placeholder {
   line-height: 29px;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .form__submit {
   position: relative;
   background: #293bdc;
@@ -752,4 +758,33 @@ textarea::placeholder {
   background-color: #293bdc;
   transform: translateX(0);
   transition: all 0.3s ease;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+}
+
+.product__caption {
+  width: 40%;
+}
+
+.product__caption h2 {
+  max-width: 500px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #293bdc;
+  font-style: normal;
+}
+.product__caption h2 + p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 150%;
+  margin-top: 20px;
+  color: #000;
+}
+
+.product__image {
+  width: 60%;
 }/*# sourceMappingURL=main.css.map */

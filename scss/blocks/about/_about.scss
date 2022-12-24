@@ -1,0 +1,16 @@
+.product {
+  display: flex;
+  align-items: center;
+}
+
+.product__caption {
+  width: 40%;
+}
+
+.product__caption h2 {
+  @include heading(500px);
+}
+
+.product__image {
+  width: 60%;
+}

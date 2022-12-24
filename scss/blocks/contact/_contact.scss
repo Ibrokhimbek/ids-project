@@ -92,6 +92,12 @@ textarea::placeholder {
   line-height: 29px;
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .form__submit {
   @include button($darkBlue, $white, $white, $darkBlue, 9.5);
   display: block;
