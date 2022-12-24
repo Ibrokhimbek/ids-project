@@ -393,9 +393,15 @@ body {
   border-radius: 10px;
   transition: all 0.3s ease;
 }
-.good__hover .good__caption,
-.good__hover .good__category {
+.good__hover > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.good__hover > div .good__caption,
+.good__hover > div .good__category {
   color: #ffffff;
+  text-align: center;
 }
 
 .good__link {
@@ -787,4 +793,99 @@ input[type=number]::-webkit-outer-spin-button {
 
 .product__image {
   width: 60%;
+}
+
+.product__details {
+  background-color: #000;
+  color: #ffffff;
+  padding: 150px 0;
+}
+
+.product__details-title {
+  max-width: auto;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #ffffff;
+  font-style: normal;
+}
+.product__details-title + p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 150%;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.details__wrapper {
+  padding-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 60px;
+}
+
+.detail__card {
+  width: 50%;
+}
+
+.detail__card .detail-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+}
+.detail__card .detail-title + p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+.detail__card .detail-title + p a {
+  color: #ffffff;
+}
+
+.similar__products {
+  background-color: #ffffff !important;
+}
+.similar__products .goods__caption {
+  max-width: auto;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #293bdc;
+  font-style: normal;
+}
+.similar__products .goods__caption + p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 150%;
+  margin-top: 20px;
+  color: #000;
+}
+.similar__products .good {
+  border: 1px solid #293bdc;
+}
+.similar__products .good::before {
+  background-color: #293bdc;
+}
+
+#catalog__hero {
+  height: 100vh;
+  background-image: url(../images/bg__catalog.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+#catalog__hero img {
+  width: 213px;
+  margin-top: 100px;
+}
+
+#about__hero {
+  height: 100vh;
+  background-image: url(../images/bg__about.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+#about__hero img {
+  width: 213px;
+  margin-top: 100px;
 }/*# sourceMappingURL=main.css.map */
