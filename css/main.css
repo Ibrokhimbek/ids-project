@@ -999,4 +999,26 @@ input[type=number]::-webkit-outer-spin-button {
 #about__hero img {
   width: 213px;
   margin-top: 100px;
+}
+
+.about__title {
+  padding: 80px;
+  background: #293bdc;
+  margin-top: -160px;
+  margin-bottom: 150px;
+}
+.about__title h2 {
+  max-width: auto;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #ffffff;
+  font-style: normal;
+}
+.about__title h2 + p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 150%;
+  margin-top: 20px;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
