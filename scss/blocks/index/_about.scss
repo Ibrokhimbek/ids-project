@@ -9,11 +9,11 @@
   align-items: flex-start;
 }
 
-.about__title {
+.about__title-index {
   @include heading(852px, $white);
 }
 
-.about__title + p {
+.about__title-index + p {
   max-width: 852px;
 }
 
