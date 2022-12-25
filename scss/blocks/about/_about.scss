@@ -13,12 +13,40 @@
 }
 
 .about__title {
+  max-width: 953px;
   padding: 80px;
   background: $darkBlue;
   margin-top: -160px;
-  margin-bottom: 150px;
 
   h2 {
     @include heading(auto, $white)
+  }
+}
+
+.supplies__wrapper {
+  display: flex;
+}
+
+.supplies__info {
+  max-width: 953px;
+  padding: 155px 121px;
+
+  h2 {
+    @include heading();
+
+    & + p {
+      text-align: left;
+    }
+  }
+}
+
+.supplies__img {
+  width: auto;
+  position: relative;
+
+  img {
+    position: absolute;
+    height: 100%;
+    width: auto;
   }
 }
