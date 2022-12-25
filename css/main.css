@@ -48,6 +48,11 @@ body {
   background-color: #000;
   padding-left: 100px;
   transform: translateX(100%);
+  transition: all 0.3s ease;
+}
+
+.show {
+  transform: translateX(0);
 }
 
 .header__list {
@@ -103,7 +108,32 @@ body {
   color: #293bdc;
 }
 
+.header__btn_wrapper {
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+.header__btn_wrapper .header__btn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.header__btn_wrapper .header__btn span {
+  display: block;
+  height: 4px;
+  width: 50px;
+  background-color: #ffffff;
+}
+
 #hero__section {
+  position: relative;
   background: linear-gradient(90deg, #ffffff 65%, #293bdc 35%);
   padding: 100px 0 80px;
 }
@@ -938,6 +968,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #catalog__hero {
+  position: relative;
   height: 100vh;
   background-image: url(../images/bg__catalog.jpeg);
   background-size: cover;
@@ -963,6 +994,7 @@ input[type=number]::-webkit-outer-spin-button {
   background: #293bdc;
   margin-top: -160px;
   margin-bottom: 150px;
+  position: relative;
 }
 .catalog__title + p {
   font-weight: 300;
@@ -1060,6 +1092,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #about__hero {
+  position: relative;
   height: 100vh;
   background-image: url(../images/bg__about.jpeg);
   background-size: cover;
@@ -1179,6 +1212,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #catalog__scroll {
+  position: relative;
   height: 100vh;
   background-color: #293bdc;
   display: flex;
