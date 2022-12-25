@@ -1,5 +1,3 @@
-
-
 #about__hero {
   height: 100vh;
   background-image: url(../images/bg__about.jpeg);
@@ -19,7 +17,7 @@
   margin-top: -160px;
 
   h2 {
-    @include heading(auto, $white)
+    @include heading(auto, $white);
   }
 }
 
@@ -48,5 +46,31 @@
     position: absolute;
     height: 100%;
     width: auto;
+  }
+}
+
+#advantages {
+  margin: 150px 0;
+  .container img {
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.advantages__info {
+  max-width: 752px;
+  padding: 150px 0;
+
+  h2 {
+    @include heading();
+  }
+}
+
+#mission {
+  padding-bottom: 150px;
+  h2 {
+    @include heading();
   }
 }

@@ -1058,4 +1058,53 @@ input[type=number]::-webkit-outer-spin-button {
   position: absolute;
   height: 100%;
   width: auto;
+}
+
+#advantages {
+  margin: 150px 0;
+}
+#advantages .container img {
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.advantages__info {
+  max-width: 752px;
+  padding: 150px 0;
+}
+.advantages__info h2 {
+  max-width: auto;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #293bdc;
+  font-style: normal;
+}
+.advantages__info h2 + p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 150%;
+  margin-top: 20px;
+  color: #000;
+}
+
+#mission {
+  padding-bottom: 150px;
+}
+#mission h2 {
+  max-width: auto;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #293bdc;
+  font-style: normal;
+}
+#mission h2 + p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 150%;
+  margin-top: 20px;
+  color: #000;
 }/*# sourceMappingURL=main.css.map */
