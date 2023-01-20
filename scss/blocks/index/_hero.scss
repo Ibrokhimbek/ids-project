@@ -73,3 +73,49 @@
   @include button();
   margin-top: 80px;
 }
+
+@include mobile() {
+  .swiper {
+    overflow-x: hidden;
+  }
+
+  #hero__section {
+    background: $darkBlue;
+
+    & *:not(.btn-primary) {
+      color: $white;
+    }
+  }
+
+  .hero__nav {
+    justify-content: center;
+  }
+
+  .telegram__wrapper {
+    display: none;
+  }
+
+  .swiper-slide {
+    flex-direction: column-reverse;
+  }
+
+  .slide__info {
+    width: 100%;
+    align-items: center;
+  }
+
+  .slide__info h2 {
+    font-size: 30px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .slide__info p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .slide__info .btn-primary {
+    margin-top: 40px;
+  }
+}

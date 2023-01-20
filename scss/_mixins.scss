@@ -60,3 +60,21 @@
     transition: all 0.3s ease;
   }
 }
+
+@mixin mobile() {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (min-width: 577px) and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin media($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}

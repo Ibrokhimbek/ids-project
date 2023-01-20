@@ -107,3 +107,32 @@
   font-size: 16px;
   line-height: 150%;
 }
+
+@include mobile() {
+  .footer__wrapper {
+    flex-direction: column;
+  }
+
+  .cta,
+  .map {
+    width: 100%;
+  }
+
+  .map {
+    height: 500px;
+  }
+
+  .map iframe {
+    left: -20px;
+    width: 100vw;
+  }
+
+  .footerNavigation__container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footerNavigation__container ul:last-child {
+    align-items: flex-start;
+  }
+}

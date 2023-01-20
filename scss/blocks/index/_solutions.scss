@@ -80,3 +80,19 @@
   line-height: 150%;
   color: #999999;
 }
+
+@include mobile() {
+  .solutions__wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .solutions__caption,
+  .solutions__list {
+    width: 100%;
+  }
+
+  .solutions__list {
+    gap: 20px;
+  }
+}

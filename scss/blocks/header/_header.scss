@@ -12,7 +12,7 @@
   background-color: #000;
   padding-left: 100px;
   transform: translateX(100%);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .show {
@@ -82,7 +82,7 @@
 
 .header__btn_wrapper {
   z-index: 9999;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
@@ -103,5 +103,19 @@
     height: 4px;
     width: 50px;
     background-color: $white;
+  }
+}
+
+@include mobile() {
+  .header__btn_wrapper {
+    width: 90px;
+    height: 90px;
+  }
+
+  .header {
+    width: 100%;
+    padding-left: 40px;
+    padding-top: 20vh;
+    justify-content: flex-start;
   }
 }

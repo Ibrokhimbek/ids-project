@@ -91,3 +91,9 @@
 .good__link {
   @include button(#000, $white, $white, #000);
 }
+
+@include mobile() {
+  .goods__list {
+    flex-direction: column;
+  }
+}
