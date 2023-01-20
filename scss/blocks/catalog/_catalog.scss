@@ -121,3 +121,21 @@
   justify-content: flex-start;
   gap: 20px;
 }
+
+@include mobile() {
+  .catalog__title {
+    padding: 50px;
+    text-align: center;
+  }
+  .catalog__list {
+    flex-direction: column;
+  }
+  .catalog__menu {
+    max-width: unset;
+    width: 100%;
+  }
+  .catalog__list .similar__products {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+}

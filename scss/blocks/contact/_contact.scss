@@ -103,3 +103,28 @@ input[type="number"]::-webkit-outer-spin-button {
   display: block;
   margin-left: auto;
 }
+
+@include mobile() {
+  #contact__hero {
+    background: $darkBlue;
+    color: white;
+  }
+
+  .contact__wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .contact__address,
+  .contact__form {
+    width: 100%;
+    padding: 0;
+  }
+
+  .inputs__wrapper input {
+    width: 100%;
+  }
+
+  .form__submit {
+    margin: 0 auto;
+  }
+}

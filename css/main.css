@@ -535,6 +535,7 @@ body {
   font-size: 20px;
   line-height: 150%;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .good__caption {
@@ -969,6 +970,26 @@ input[type=number]::-webkit-outer-spin-button {
   transition: all 0.3s ease;
 }
 
+@media (max-width: 576px) {
+  #contact__hero {
+    background: #293bdc;
+    color: white;
+  }
+  .contact__wrapper {
+    flex-direction: column-reverse;
+  }
+  .contact__address,
+.contact__form {
+    width: 100%;
+    padding: 0;
+  }
+  .inputs__wrapper input {
+    width: 100%;
+  }
+  .form__submit {
+    margin: 0 auto;
+  }
+}
 .product {
   display: flex;
   align-items: center;
@@ -1195,6 +1216,23 @@ input[type=number]::-webkit-outer-spin-button {
   gap: 20px;
 }
 
+@media (max-width: 576px) {
+  .catalog__title {
+    padding: 50px;
+    text-align: center;
+  }
+  .catalog__list {
+    flex-direction: column;
+  }
+  .catalog__menu {
+    max-width: unset;
+    width: 100%;
+  }
+  .catalog__list .similar__products {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+}
 #about__hero {
   position: relative;
   height: 100vh;
@@ -1212,6 +1250,8 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 80px;
   background: #293bdc;
   margin-top: -160px;
+  z-index: 9998;
+  position: relative;
 }
 .about__title h2 {
   max-width: auto;
@@ -1315,6 +1355,40 @@ input[type=number]::-webkit-outer-spin-button {
   color: #000;
 }
 
+@media (max-width: 576px) {
+  .about__title {
+    padding: 30px;
+  }
+  .about__title h2 {
+    font-size: 28px;
+  }
+  .about__title p {
+    font-size: 18px;
+    line-height: normal;
+  }
+  .supplies__wrapper {
+    flex-direction: column-reverse;
+  }
+  .supplies__info {
+    padding: 30px;
+  }
+  .supplies__img img {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .advantages__info {
+    padding: 50px 0;
+  }
+  #mission {
+    padding-bottom: 40px;
+  }
+  #mission h2 {
+    font-size: 28px;
+    line-height: normal;
+  }
+}
 #catalog__scroll {
   position: relative;
   height: 100vh;

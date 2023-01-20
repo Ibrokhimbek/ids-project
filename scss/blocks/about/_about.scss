@@ -16,6 +16,8 @@
   padding: 80px;
   background: $darkBlue;
   margin-top: -160px;
+  z-index: 9998;
+  position: relative;
 
   h2 {
     @include heading(auto, $white);
@@ -73,5 +75,48 @@
   padding-bottom: 150px;
   h2 {
     @include heading();
+  }
+}
+
+@include mobile() {
+  .about__title {
+    padding: 30px;
+
+    h2 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: normal;
+    }
+  }
+
+  .supplies__wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .supplies__info {
+    padding: 30px;
+  }
+
+  .supplies__img img {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .advantages__info {
+    padding: 50px 0;
+  }
+
+  #mission {
+    padding-bottom: 40px;
+
+    h2 {
+      font-size: 28px;
+      line-height: normal;
+    }
   }
 }
