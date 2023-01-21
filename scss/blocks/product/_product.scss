@@ -68,3 +68,32 @@
     }
   }
 }
+
+@include mobile() {
+  .product {
+    flex-direction: column-reverse;
+    padding: 40px 0;
+  }
+
+  .product__caption,
+  .product__image {
+    width: 100%;
+  }
+
+  .product__caption h2 {
+    font-size: 28px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .product__details-title {
+    font-size: 40px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .detail__card {
+    width: 100%;
+    text-align: center;
+  }
+}
